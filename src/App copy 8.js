@@ -79,7 +79,7 @@ function App() {
         {/* 상단의 동적Modal변수가 true면 작동, false면 비작동을 뜻함. */}
         {/* 모달창 작동 조건식 */}
         {
-          동적모달 == true ? <EEGDataDetailModal color = {'skyblue'} 작명={실험제목} 실험제목을변경하는함수={실험제목을변경하는함수} ></EEGDataDetailModal> : null
+          동적모달 == true ? <EEGDataDetailModal 작명={실험제목}></EEGDataDetailModal> : null
         }
 
 
@@ -100,11 +100,10 @@ function App() {
 // function안의 컴포넌트에는 하나의 div태그만 들어가야함
 function EEGDataDetailModal(props){
   return(
-    <div className='modal' style={{background : props.color}}>
+    <div className='modal'>
         <h4>{props.작명[0]}</h4>
         <p>2022년 5월 20일</p>
         <p>집중도: 50, 스트레스: 50, 흥미도: 50</p>
-        <button onClick={()=>{let copy = [...props.작명]; copy[0] = '여성뇌파감정정보분석-221210'; props.실험제목을변경하는함수(copy)}}>글수정</button>
       </div>
   )
 }
