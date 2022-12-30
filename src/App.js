@@ -116,5 +116,6 @@ function EEGDataDetailModal(props){
 */ 
 
 // git 테스트를 위해서 해당 주석을 추가함
+// git 테스트를 위해서 해당 주석을 2번 추가함.
 
 export default App;
