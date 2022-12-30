@@ -115,4 +115,6 @@ function EEGDataDetailModal(props){
 3. state에 따라 UI가 어떻게 보일지 작성
 */ 
 
+// git 테스트를 위해서 해당 주석을 추가함
+
 export default App;
